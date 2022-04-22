@@ -1,0 +1,155 @@
+<!-- 
+THEME: Small Apps | Bootstrap App Landing Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
+DEMO: https://demo.themefisher.com/small-apps/
+GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
+
+Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function calcAmt(){
+    
+    var input = document.getElementById("input1").value;
+    const perc = 0.03;
+   
+    const months1 = 16;
+    const months2 = 4;
+    //2021
+    var percamt1 = perc * input;
+    
+    var block1amt = parseFloat(input) + parseFloat(percamt1) ;
+    
+    var totblock1 = percamt1 * months1;
+    
+
+    //2022
+    
+    var percamt2 = perc * block1amt;
+   
+    var block2amt = parseFloat(block1amt) + parseFloat(percamt2) ;
+    
+    var totblock2 = percamt2 * months2;
+    
+    var total = totblock1 + totblock2;
+    
+    
+
+
+    
+    document.getElementById("out1").value = "2021: " + totblock1;
+    document.getElementById("out2").value = "2022: " + totblock2;
+    document.getElementById("out3").value = "Total: " + total;
+    document.getElementById("out4").value = "Monthly: " + block2amt;
+    
+}
+  </script>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Calculator Z</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+
+
+<!--====  End of Address and Map  ====-->
+<section class="contact-form section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="mb-5 text-center">Calculator</h2>
+			</div>
+			<div class="col-12">
+				<form action="">
+					<div class="row">
+						<!-- Name -->
+						<div class="col-md-6 mb-2">
+							<input class="form-control main" type="number" placeholder="Input" id="input1" oninput="calcAmt()" required>
+						</div>
+
+            <div class="col-md-6 mb-2">
+							<input class="form-control main"   id="out1" >
+						</div>
+
+            <div class="col-md-6 mb-2">
+							<input class="form-control main"   id="out2" >
+						</div>
+
+            <div class="col-md-6 mb-2">
+							<input class="form-control main"   id="out3" >
+						</div>
+
+            <div class="col-md-6 mb-2">
+							<input class="form-control main"   id="out4" >
+						</div>
+
+
+
+            
+
+						
+
+						
+						
+						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+
+  
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <!-- google map -->
+  
+</body>
+
+</html>
