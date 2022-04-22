@@ -88,6 +88,15 @@ ul.post-tag li {
   font-size: 14px;
 }
 
+#out1,#out2,#out3,#out4{
+background-color: lightcyan;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: green;
+}
+
+
+
 ul.post-tag li img {
   width: 25px;
   height: 25px;
